@@ -1,100 +1,59 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size:  15px;
-    line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 textarea {
-    background: transparent;
+  background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-
-}
-
-.display {
-  text-align: center;
-  background-color: white;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .description {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 
 .time-block {
-    text-align: center;
-    border-radius: 15px;
-  }
+  border-radius: 15px;
+}
 
-  .row {
-    white-space: pre-line;
-    height: 40px;
-    border-top: 1px solid white;
-  }
+.row {
+  border-top: 1px solid white;
+}
 
-  .hour {
-    background-color: white;
-    color: black;
-    border-top: solid;
-    border-bottom: solid;
-    border-left: solid;
-    border-right: solid;
-  }
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
 
-  .past {
-    background-color: darkgray;
-    color: white;
-  }
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
 
-  .present {
-    color: skyblue;
-    color: white;
-  }
+.present {
+  background-color: #ff6961;
+  color: white;
+}
 
-  .future {
-    background-color: yellowgreen;
-    color: white
-  }
+.future {
+  background-color: #77dd77;
+  color: white;
+}
 
-  .saveContentsBtn {
-    border-left: 1px solid black;
-    border-top-right-radius:  16px;
-    border-bottom-right-radius: 16px;
-    background-color: lightblue;
-    color: white;
-  }
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
 
-  .saveContentsBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-out;
-  }
-
-  @media screen  and (max-width: 768px), screen and (max-width: 408px) [
-    .row {
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .hour {
-        padding-right: 18%;
-    }
-
-    .saveContentsBtn {
-        border: 0;
-        border-radius: 0.25rem;
-        height: 50px;
-    }
-
-    .textarea {
-        min-height: 80px;
-        border: 0;
-    }
-
-  ]
-    
-  
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
