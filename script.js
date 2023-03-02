@@ -21,6 +21,24 @@ $(function () {
   // current hour in 24-hour time?
   var time = dayjs().format('HH');
   console.log(time);
+  var timeblock = $('.container-lg').children('div');
+
+  for(i = 0; i < timeblock.length; i++ ){
+    var tbid = '#' + timeblock[i]['id'];
+    var idnum = tbid.split('-');
+
+    if(idnum[1] < time){
+      //console.log('past');
+      $(tbid).addClass('past');
+  } else if (idnum[1] == time) {
+      //console.log('present');
+      $(tbid).addClass('present');
+  }else if (idnum[1] > time ){
+      //console.log('future');
+      $(tbid).addClass('future');
+
+  }
+}
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
