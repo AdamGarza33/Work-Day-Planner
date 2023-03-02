@@ -1,0 +1,13 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size:  15px;
+    line-height: 1;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: black;
+
+}
